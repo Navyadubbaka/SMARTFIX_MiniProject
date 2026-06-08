@@ -15,7 +15,7 @@ app.use("/api/complaints", complaintRoutes);
 app.use("/uploads", express.static("uploads"));
 
 // 🔥 MongoDB Atlas Connection
-mongoose.connect("mongodb+srv://smartfix_user:smartfix123@smartfix-cluster.m3nk2to.mongodb.net/smartfix")
+mongoose.connect("Your MongoDB url ")
     .then(() => console.log("MongoDB Atlas Connected"))
     .catch(err => console.log("DB Error:", err));
 mongoose.connection.once("open", () => {
